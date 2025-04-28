@@ -4,11 +4,12 @@ from bs4 import BeautifulSoup
 
 def crawl_theqoo(base_url, last_page):
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"
     }
     collected_titles = []
 
-    keywords = ['skt', '유심', 'usim']  # 소문자 기준 키워드 리스트
+    keywords = ['skt', '유심', 'usim']  # 키워드 리스트 (소문자 기준)
 
     try:
         for page in range(1, last_page + 1):
