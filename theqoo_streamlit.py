@@ -5,6 +5,8 @@ from selenium.webdriver.chrome.options import Options
 import time
 import pandas as pd
 import base64
+import requests
+from bs4 import BeautifulSoup
 
 # 페이지 설정
 st.set_page_config(page_title="더쿠 크롤러", page_icon="🔍")
